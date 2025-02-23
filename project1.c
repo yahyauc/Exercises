@@ -13,7 +13,7 @@ int main() {
         printf("Le maximum est : %d\n", max);
     }
     else 
-        printf(" rahom mtsawin");
+        printf(" les nombre sont égaux !!!");
   
     return 0;
 }
