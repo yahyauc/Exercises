@@ -1,4 +1,4 @@
-plates = []
+plates = ["l7rira", "chbakiya", "kskso"]
 commande = {}
 historique = []
 commande_en_attente = ["cmd1", "cmd2", "cmd3", "cmd4"]
