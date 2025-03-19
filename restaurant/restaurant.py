@@ -8,12 +8,12 @@ def ajouter_plat_au_menu(plat):
         plates.append(plat)
         print("Le plat a été ajouté avec succès !")
     else:
-        print("Le plat est déjà ajouté !")
+        print("Le plat est deja ajouté !")
 
 def passer_une_commande(plat):
     num_du_table = int(input("Entrer le numéro de la table : "))
     while num_du_table > 10 or num_du_table < 0:
-        print("Cette table n'existe pas, s'il vous plaît vérifiez bien à nouveau")
+        print("Cette table n'existe pas, pls refiez bien")
         num_du_table = int(input("Entrer le numéro de la table : "))
     if plat not in plates:
         print("Ce plat n'est pas disponible!")
@@ -25,13 +25,13 @@ def passer_une_commande(plat):
 def servir_commande():
     if not commande_en_attente:
         print("Aucune commande en attente !")
-    # Ceci pour livrer la première commande
+    
     commande = commande_en_attente.pop(0)
-    # Ceci pour ajouter la commande à l'historique
+    
     historique.append(commande)
     print("La commande a été servie !")
 
-def annuler_la_dernière_commande():
+def annuler_la_derniere_commande():
     if not commande_en_attente:
         print("Aucune commande à annuler")
     else:
