@@ -29,7 +29,7 @@ def servir_commande():
     commande = commande_en_attente.pop(0)
     
     historique.append(commande)
-    print("La commande a été servie !")
+    print("La commande a ete servie !")
 
 def annuler_la_derniere_commande():
     if not commande_en_attente:
